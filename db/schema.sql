@@ -8,11 +8,11 @@ CREATE DATABASE burger_db;
 USE burger_db;
 
 /*burger*/
-CREATE TABLE burger{
+CREATE TABLE burger(
     id INT AUTO_INCREMENT NOT NULL,
     burger_name VARCHAR(255),
     devoured BOOLEAN,
     PRIMARY KEY (id)
-};
+);
 
 
