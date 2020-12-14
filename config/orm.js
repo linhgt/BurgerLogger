@@ -1,9 +1,10 @@
 var connection = require("./connection.js");
 
 /*ORM - Object Relational Mapper*/
-//Still don't understance why is orm required
+//Still don't understance why orm is required
 
 var orm = {
+    //Handling sql query basically
     selectAll: function(tableInput, cb){
         var Query = "SELECT * FROM ??;";
         connection.query(Query, [tableInput], function(err, res){
