@@ -1,0 +1,20 @@
+body {
+    background-color:#fed8b1;
+}
+
+.container{
+    text-align:center;
+    padding:5%;
+}
+
+.burger-image{
+}
+
+.burger-image::before{
+    content: "🍔";
+    font-size: 100px;
+}
+
+.burger-image::after{
+    
+}
