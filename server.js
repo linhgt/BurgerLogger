@@ -1,3 +1,4 @@
+var express = require('express');
 var eshbs = require("express-handlebars");
 
 var app = express();
@@ -12,11 +13,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //Use handlebars
-app.engine("engine", eshbs({defaultLayout:"main"}));
-app.set("view engine, handlebars");
+app.engine("handlebars", eshbs({defaultLayout:"main"}));
+app.set("view engine", "handlebars");
 
 //controller Route
-var controllerRoute = require("./controllers/burgers_controller");
+var controllerRoute = require("./controllers/burgers_controller.js");
 
 app.use(controllerRoute);
 
