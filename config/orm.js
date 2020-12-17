@@ -22,8 +22,8 @@ var orm = {
     },
     //Take a burger id and change it devoured state
     updateOne: function(tableInput, devoured, id, cb){
-        var Query = "UPDATE ?? SET burger_name = ?, devoured = ? WHERE id = ?";
-        connection.query(Query, [tableInput, burgerName, devoured, id], (err, res)=>{
+        var Query = "UPDATE ?? SET devoured = ? WHERE id = ?";
+        connection.query(Query, [tableInput, devoured, id], (err, res)=>{
             if (err) throw err;
             cb(res);
         })
