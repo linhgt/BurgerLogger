@@ -13,7 +13,7 @@ else{
         port: 3306,
         database:"burger_db",
         user:"root",
-        password:"Hoanhtrang@123"
+        password:process.env.DB_PASS
     });
 }
 
