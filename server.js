@@ -19,7 +19,10 @@ app.set("view engine", "handlebars");
 //controller Route
 var controllerRoute = require("./controllers/burgers_controller.js");
 
-app.use(controllerRoute);
+//app.use(controllerRoute);
+app.get("/", function(req, res){
+    res.send("Hello");
+});
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
